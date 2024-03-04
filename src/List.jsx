@@ -40,7 +40,7 @@ function List(){
         
     }
 
-    // adding dragging functionality
+    // adding dragging functionality (old code unoptimized)
     // useEffect(() => {
     //     const draggables = document.querySelectorAll('.draggable');
     //     const container = document.querySelector('ul');
@@ -102,6 +102,8 @@ function List(){
 
     // });
 
+
+    // adding drag functionality (new code optimized)
     function getDragElement(container, x, y) {
         const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')];
 
