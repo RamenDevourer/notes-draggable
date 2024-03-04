@@ -110,7 +110,7 @@ function List(){
         return draggableElements.reduce((closest, child) => {
             const box = child.getBoundingClientRect();
             const offsetY = y - box.top - box.height;
-            const offsetX = x - box.left - box.width;
+            const offsetX = x - box.left - box.width/2;
             if (offsetY < 0 && offsetY > closest.offsetY){
                 if (offsetX < 0 && offsetX > closest.offsetX){
                     return {offsetX: offsetX, offsetY: offsetY, element: child};
