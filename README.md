@@ -1,2 +1,2 @@
 # notes-draggable
- draggable notes
+ A simple notes website with draggable notes
